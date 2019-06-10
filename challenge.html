@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    
+<!-- Mirrored from int.evina.fr/challenge/challenge.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Jun 2019 15:07:33 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+<script src="bot-detector.js"></script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function(){
+    new BotDetector({
+        timeout: 1200,
+	    callback: function(result) {
+
+	    	if (result.isBot){
+	    	    $('#Button').prop('disabled', true);
+		    	$("#button").hide();
+	    	}
+	    }
+    }).monitor();
+
+});
+</script>
+    
+    <head>
+        <style media="screen">
+            a.button {
+                background: #CDDC39;
+                padding: 20px;
+                text-align: center;
+                display: block;
+                margin: 10px;
+                font-size: 16px;
+                font-weight: bold;
+                text-decoration: none;
+                color: black;
+            }
+
+            html {
+                background: black;
+                font-family: Arial;
+            }
+
+            h1 {
+                color: #ffffff;
+            }
+        </style>
+        <meta charset="utf-8">
+        <title>Challenge</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    </head>
+    <body>
+        <h1>Challenge</h1>
+        <a id="button" href="https://int.evina.fr/challenge/subscribe.html" class="button">
+            Confirm subscription
+        </a>
+
+    </body>
+<!-- Mirrored from int.evina.fr/challenge/challenge.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Jun 2019 15:07:33 GMT -->
+</html>
